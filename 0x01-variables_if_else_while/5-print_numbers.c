@@ -7,12 +7,13 @@
  */
 int main(void)
 {
-	int base_ten;
+	char base_ten = '0';
 
-	for (base_ten = 0; base_ten < 10; base_ten++)
+	while (base_ten <= '9')
 	{
-		printf("%d\n", base_ten);
+		putchar(base_ten);
+		base_ten++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
