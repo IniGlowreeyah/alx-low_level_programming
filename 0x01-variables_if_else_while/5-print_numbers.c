@@ -13,5 +13,6 @@ int main(void)
 	{
 		printf("%d\n", base_ten);
 	}
+	printf("\n");
 	return (0);
 }
