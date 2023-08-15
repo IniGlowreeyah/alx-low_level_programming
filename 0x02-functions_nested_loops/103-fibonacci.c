@@ -1,28 +1,23 @@
 #include <stdio.h>
 /**
- * main -prints the first 52 fibinacci numbers
- * Return: nothing!
+ * main -sum up even fibonacci up to 4000000
+ * Return: (0)
  */
 int main(void)
 {
-	int i = 0;
-	long int j = 1, k = 2;
+	long int i, x = 1, y = 2, sum = 0, tsum = 0;
 
-	while (i < 50)
+	for (i = 0; i < 49; i++)
 	{
-		if (i == 0)
-			printf("%ld", j);
-		else if (i == 1)
-			printf(", %ld", k);
-		else
-		{
-			k += j;
-			j = k - j;
-			printf(", %ld", k);
-		}
-			++i;
+	if ((y % 2 == 0) && (y <= 4000000))
+	{
+	tsum = tsum + y;
 	}
-			printf("\n");
+sum = x + y;
+x = y;
+y = sum;
+	}
+
 			return (0);
 }
 
