@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-/* This program demonstrates the use of magic in C. */
 int main(void)
 {
 	int n;
